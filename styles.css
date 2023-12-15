@@ -1,7 +1,15 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-bg-color: #F3F6F9;
+    --standard-text: #0C0C0C;
+    --service-tile: #7A7A7A;
+    --floating-words: #F2F0FF;
+
+    --majorella-blue: #4B49E8;
+    --chrysler-blue: #5722CD;
+    --french-rose:#ED4385;
+
 }
 
 /*////////////////////////
@@ -20,7 +28,35 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.outer-container{
+    border: solid red;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.inner-container{
+    border: dashed green;
+    flex-basis: 1200px;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -31,6 +67,36 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+
+header{
+    background: rgb(75,73,232);
+    background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 100%);
+}
+
+.nav-container{
+    border: solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.nav-container > ul{
+    list-style: none;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: ;
+}
+
+.header-text{
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
