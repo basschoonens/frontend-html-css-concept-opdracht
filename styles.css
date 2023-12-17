@@ -9,7 +9,6 @@
     --majorella-blue: #4B49E8;
     --chrysler-blue: #5722CD;
     --french-rose:#ED4385;
-
 }
 
 /*////////////////////////
@@ -35,28 +34,22 @@
 }
 
 .outer-container{
+    background-color: var(--main-bg-color);
     border: solid red;
     display: flex;
     flex-direction: column;
+
     width: 100%;
-    justify-content: center;
     align-items: center;
 }
 
-.outer-header-container{
-    border: solid red;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
 .inner-container{
+    border: dashed green;
     display: flex;
     flex-direction: column;
-    border: dashed green;
-    flex-basis: auto;
+
     width: 1200px;
+    margin: 0 20px;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -77,37 +70,49 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
-
 /* --------------- 4.1 Header ------------------------- */
 
 header{
-    background: rgb(75,73,232);
     background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 100%);
+}
+
+.outer-header-container{
+    border: solid red;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    justify-content: center;
 }
 
 .inner-nav-container{
     border: dashed green;
-    flex-basis: 1200px;
     display: flex;
     flex-direction: column;
+
+    flex-basis: 1200px;
     align-items: center;
     color: var(--floating-words);
+    margin: 0 20px;
 }
 
 .nav-container{
-    border: solid yellow;
+    /*border: solid yellow;*/
     display: flex;
-    width: 100%;
+    max-width: 400px;
+    padding: 20px;
     flex-direction: row;
-    justify-content: flex-end;
+    align-self: flex-end;
+    justify-content: space-evenly;
     color: var(--floating-words);
 }
 
 .nav-container > ul{
     list-style: none;
     display: flex;
-    list-style: none;
+    /*list-style: none;*/
     gap: 20px;
+    font-family: inherit;
     /*gap vervangen door space-between*/
     color: var(--floating-words) ;
 }
@@ -116,12 +121,54 @@ header{
     border: solid red;
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
+
+
+    /*flex-basis: auto;*/
+
+    max-width: 600px;
+    padding: 100px 0;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.work-together-btn{
+    background-color: var(--french-rose);
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--floating-words);
+    max-width: 220px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    padding: 18px 24px;
+}
+/* --------------- 4.2 Introduction ------------------- */
+
+.company-description{
+    align-self: center;
+    border: solid orange;
+    /*flex-basis: 400px;*/
+    padding: 50px 0px;
+    text-align: center;
+
+    color: var(--chrysler-blue);
+    font-weight: 500;
+
     max-width: 600px;
 }
 
+.company-description p{
+    color: var(--standard-text);
+}
+
+/* --------------- 4.3 Main content ------------------- */
 
 
-/* --------------- 4.2 Introduction ------------------- */
+
+/* --------------- 4.3 Articles content ------------------- */
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
