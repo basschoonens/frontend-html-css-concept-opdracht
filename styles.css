@@ -150,13 +150,12 @@ header{
     align-self: center;
     border: solid orange;
     /*flex-basis: 400px;*/
-    padding: 50px 0px;
+    padding: 50px 20px;
     text-align: center;
 
     color: var(--chrysler-blue);
     font-weight: 500;
-
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .company-description p{
@@ -165,7 +164,24 @@ header{
 
 /* --------------- 4.3 Main content ------------------- */
 
+.main-items-wrapper{
+    border: dashed blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.main-items-text{
+    border: dashed deeppink;
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 500px;
+}
+
+.main-image-wrapper{
+    flex-basis: 600px;
+}
 
 /* --------------- 4.3 Articles content ------------------- */
 
