@@ -12,19 +12,19 @@
 }
 
 /*////////////////////////
+
+
     Table of Contents
     1. Global Styles
     2. Typography
     3. Layout
-        3.1 Reusables
-        3.2 Other
     4. Areas
         4.1 Header
         4.2 Introduction
         etc.
     5. Media Queries
-////////////////////////*/
 
+ */
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
 * {
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 20px;
 }
 
@@ -168,7 +168,13 @@ header{
     border: dashed blue;
     display: flex;
     flex-direction: row;
+
     justify-content: space-between;
+    padding: 20px 0;
+
+}
+.main-items-wrapper:nth-child(even){
+    flex-direction: row-reverse;
 }
 
 .main-items-text{
@@ -176,15 +182,47 @@ header{
     display: flex;
     flex-direction: column;
 
-    flex-basis: 500px;
+    flex-basis: 400px;
+    padding: 50px 50px;
+    /*height: 100%;*/
+    /*align-self: center;*/
 }
 
 .main-image-wrapper{
-    flex-basis: 600px;
+    border: solid yellow;
+    flex-basis: 800px;
+
+    flex-grow: 0;
+    flex-shrink: 1;
 }
+
+.main-item-images{
+    width: 100%;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*.image-wrapper {*/
+/*    flex-basis: 800px;*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 1;*/
+/*}*/
 
 /* --------------- 4.3 Articles content ------------------- */
 
+.inner-container-articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.article-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------- 4.4 Form section ------------------- */
+
+
+/* --------------- 4.5 Footer ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */

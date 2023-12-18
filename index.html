@@ -37,39 +37,42 @@
                 <br>
                 <br>
                 <br>
-                <p>Have a question? Click here to contact us!</p>
+                <p>Have a question? Click here to <a href="#">contact</a> us!</p>
             </div>
         </section>
         <section class="inner-container">
             <div class="main-items-wrapper">
                 <div class="main-items-text">
                     <h2>Rolling Stone</h2>
+                    <span><img src="assets/squiggle_line.svg" alt="squiggle"></span>
                     <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
                     <a href="#">view project</a>
                 </div>
-                <span class="main-image-wrapper"><img src="assets/work-image-01.jpeg"></span>
+                <span class="main-image-wrapper"><img class="main-item-images" src="assets/work-image-01.jpeg"></span>
             </div>
             <div class="main-items-wrapper">
                 <div class="main-items-text">
                     <h2>Variety</h2>
+                    <span><img src="assets/squiggle_line.svg" alt="squiggle"></span>
                     <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
                     <a href="#">view project</a>
                 </div>
-                <span class="main-image-wrapper"><img src="assets/work-image-02.jpeg"></span>
+                <span class="main-image-wrapper"><img class="main-item-images" src="assets/work-image-02.jpeg"></span>
             </div>
             <div class="main-items-wrapper">
                 <div class="main-items-text">
                     <h2>Worth</h2>
+                    <span><img src="assets/squiggle_line.svg" alt="squiggle"></span>
                     <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
                     <a href="#">view project</a>
                 </div>
-                <span class="main-image-wrapper"><img src="assets/work-image-03.jpeg"></span>
+                <span class="main-image-wrapper"><img class="main-item-images" src="assets/work-image-03.jpeg"></span>
             </div>
         </section>
-        <section class="inner-container">
+        <section class="inner-container inner-container-articles">
             <article class="article-container">
-                <h3>Services</h3>
-                <p>Web Design Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</p>
+                <h3>Web Design</h3>
+                <p>Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</p>
             </article>
             <article class="article-container">
                 <h3>Web Development</h3>
@@ -92,10 +95,24 @@
                 <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and ensure your messaging is focused and targeted.</p>
             </article>
          </section>
-        <section class="inner-container">
+        <section class="inner-container form-section">
             <div>
                 <h2>Let's work together</h2>
                 <p>Have a question? Need a quote? Let us know!</p>
+                <form action="" method="get" class="form-example">
+                    <div>
+                        <label for="name">Name: </label>
+                        <input placeholder="name" type="text" name="name" id="name" required />
+                    </div>
+                    <div>
+                        <label for="email">Enter your email: </label>
+                        <input placeholder="email" type="email" name="email" id="email" required />
+                    </div>
+                    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+                    <div class="form-example">
+                        <input type="submit" value="Subscribe!" />
+                    </div>
+                </form>
             </div>
         </section>
     </main>
