@@ -9,6 +9,8 @@
     --majorella-blue: #4B49E8;
     --chrysler-blue: #5722CD;
     --french-rose:#ED4385;
+
+
 }
 
 /*////////////////////////
@@ -99,11 +101,11 @@ header{
 .nav-container{
     /*border: solid yellow;*/
     display: flex;
-    max-width: 400px;
+    width: 100%;
     padding: 20px;
     flex-direction: row;
     align-self: flex-end;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     color: var(--floating-words);
 }
 
@@ -164,31 +166,40 @@ header{
 
 /* --------------- 4.3 Main content ------------------- */
 
-.main-items-wrapper{
+.outer-projects-container{
+    background-color: var(--floating-words);
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    width: 100%;
+    border: solid purple;
+}
+
+.project-items-wrapper{
     border: dashed blue;
     display: flex;
     flex-direction: row;
 
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
 
 }
-.main-items-wrapper:nth-child(even){
+.project-items-wrapper:nth-child(even){
     flex-direction: row-reverse;
 }
 
-.main-items-text{
+.project-items-text{
     border: dashed deeppink;
     display: flex;
     flex-direction: column;
 
     flex-basis: 400px;
-    padding: 50px 50px;
-    /*height: 100%;*/
-    /*align-self: center;*/
+
 }
 
-.main-image-wrapper{
+.project-image-wrapper{
     border: solid yellow;
     flex-basis: 800px;
 
@@ -196,7 +207,7 @@ header{
     flex-shrink: 1;
 }
 
-.main-item-images{
+.project-item-images{
     width: 100%;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
 }
@@ -209,18 +220,73 @@ header{
 
 /* --------------- 4.3 Articles content ------------------- */
 
-.inner-container-articles{
+.inner-usp-container{
+    border: dashed red;
     display: flex;
     flex-direction: row;
+
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    row-gap: 16px;
+
+    padding: 100px 0;
 }
 
-.article-container{
-    display: flex;
-    flex-direction: column;
+.usp-article{
+    border: solid 1px var(--majorella-blue);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
+    padding: 20px 20px;
+    flex-basis: 330px;
+}
+
+.usp-article img {
+    max-width: 50px;
+    margin: 16px;
 }
 
 /* --------------- 4.4 Form section ------------------- */
+.outer-container-form{
+    background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.inner-container-form{
+    color: var(--floating-words);
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 1200px;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.work-together-div{
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    border: solid red;
+    width: 700px;
+}
+
+.feedback-form{
+    border: solid green;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+
 
 
 /* --------------- 4.5 Footer ------------------- */
