@@ -146,6 +146,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
     padding: 18px 24px;
 }
+
 /* --------------- 4.2 Introduction ------------------- */
 
 .company-description{
@@ -186,6 +187,7 @@ header{
     padding: 20px 0;
 
 }
+
 .project-items-wrapper:nth-child(even){
     flex-direction: row-reverse;
 }
@@ -196,7 +198,6 @@ header{
     flex-direction: column;
 
     flex-basis: 400px;
-
 }
 
 .project-image-wrapper{
@@ -211,12 +212,6 @@ header{
     width: 100%;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
 }
-
-/*.image-wrapper {*/
-/*    flex-basis: 800px;*/
-/*    flex-grow: 0;*/
-/*    flex-shrink: 1;*/
-/*}*/
 
 /* --------------- 4.3 Articles content ------------------- */
 
@@ -272,23 +267,47 @@ header{
     border: solid red;
     width: 700px;
 }
+.work-together-div h2, p{
+    padding: 20px 0;
+}
+
 
 .feedback-form{
     border: solid green;
     width: 100%;
+    text-align: left;
 }
 
-input{
+.work-together-div input{
     width: 100%;
+    padding: 10px 0;
 }
 
 textarea{
     width: 100%;
 }
 
-
-
+.send-button{
+    background-color: var(--french-rose);
+    font-family: inherit;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--floating-words);
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    margin: 10px 0 0 0;
+    padding: 18px 24px;
+}
 
 /* --------------- 4.5 Footer ------------------- */
+
+footer{
+    background-color: var(--standard-text);
+    color: var(--main-bg-color);
+    text-align: center;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
