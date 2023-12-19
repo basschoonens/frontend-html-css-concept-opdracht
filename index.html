@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <title>Dit is een nieuw project!</title>
+    <title>Repuke</title>
 </head>
 <body>
     <header class="outer-container outer-header-container">
         <div class="inner-container inner-nav-container">
-            <nav class="nav-container">
+            <nav class="nav-container-list">
                 <ul>
-                    <li>Case Studies</li>
-                    <li>Services</li>
-                    <li>Contact Us</li>
+                    <li><a class="nav-links" href="#">Studies</a></li>
+                    <li><a class="nav-links" href="#">Services</a></li>
+                    <li><a class="nav-links" href="#">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -20,7 +20,8 @@
                 <p>We are here to help you succeed.</p>
                 <button class="work-together-btn" type="button">Let's work together</button>
             </div>
-            <span class="image-squiggle-line-stripe"><img src="assets/squiggle_line_stripe.svg"></span>
+<!--            <span class="image-squiggle-line-stripe"><img src="assets/squiggle_line_stripe.svg"></span>-->
+            <img class="header-squiggle-line" src="assets/squiggle_line_stripe.svg">
         </div>
     </header>
     <main class="outer-container">
@@ -37,7 +38,7 @@
                 <br>
                 <br>
                 <br>
-                <p>Have a question? Click here to <a href="#">contact</a> us!</p>
+                <p>Have a question? <a class="click-here" href="#">Click here</a> to contact us!</p>
             </div>
         </section>
     <div class="outer-projects-container">
@@ -45,9 +46,9 @@
             <div class="project-items-wrapper">
                 <div class="project-items-text">
                     <h2>Rolling Stone</h2>
-                    <span><img src="assets/squiggle_line.svg" alt="squiggle"></span>
+                    <span><img id="squiggle-line-item" src="assets/squiggle_line.svg" alt="squiggle"></span>
                     <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
-                    <a href="#">view project</a>
+                    <a class="view-project-link" href="#">view project</a>
                 </div>
                 <span class="project-image-wrapper"><img class="project-item-images" src="assets/work-image-01.jpeg"></span>
             </div>
@@ -56,7 +57,7 @@
                     <h2>Variety</h2>
                     <span><img src="assets/squiggle_line.svg" alt="squiggle"></span>
                     <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
-                    <a href="#">view project</a>
+                    <a class="view-project-link" href="#">view project</a>
                 </div>
                 <span class="project-image-wrapper"><img class="project-item-images" src="assets/work-image-02.jpeg"></span>
             </div>
@@ -65,7 +66,7 @@
                     <h2>Worth</h2>
                     <span><img src="assets/squiggle_line.svg" alt="squiggle"></span>
                     <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
-                    <a href="#">view project</a>
+                    <a class="view-project-link" href="#">view project</a>
                 </div>
                 <span class="project-image-wrapper"><img class="project-item-images" src="assets/work-image-03.jpeg"></span>
             </div>
@@ -129,7 +130,7 @@
         </div>
     </main>
     <footer>
-        <p>Business website opdracht © NOVI Hogeschool 2022</p>
+        <h5>Business website opdracht © NOVI Hogeschool 2022</h5>
     </footer>
 </body>
 </html>
