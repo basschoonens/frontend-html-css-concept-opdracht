@@ -8,9 +8,7 @@
 
     --majorella-blue: #4B49E8;
     --chrysler-blue: #5722CD;
-    --french-rose:#ED4385;
-
-
+    --french-rose: #ED4385;
 }
 
 /*////////////////////////
@@ -19,12 +17,11 @@
     Table of Contents
     1. Global Styles
     2. Typography
-    3. Layout
-    4. Areas
-        4.1 Header
-        4.2 Introduction
+    3. Areas
+        3.1 Header
+        3.2 Introduction
         etc.
-    5. Media Queries
+    4. Media Queries
 
  */
 /* ------------------------------- 1. Global Styles -------------------------------- */
@@ -35,8 +32,9 @@
     margin: 0;
 }
 
-.outer-container{
+.outer-container {
     background-color: var(--main-bg-color);
+
     /*border: solid red;*/
     display: flex;
     flex-direction: column;
@@ -45,7 +43,7 @@
     align-items: center;
 }
 
-.inner-container{
+.inner-container {
     /*border: dashed green;*/
     display: flex;
     flex-direction: column;
@@ -56,7 +54,7 @@
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,29 +62,22 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 
-H2{
+h2 {
     padding: 5px;
 }
 
-h5{
+h5 {
     font-family: inherit;
-    font-weight: initial;
 }
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+/* ------------------------------- 3. Areas ---------------------------------------- */
+/* --------------- 3.1 Header ------------------------- */
 
-/* --------------- 3.1 Reusables ----------------------- */
-
-/* --------------- 3.2 Other --------------------------- */
-
-/* ------------------------------- 4. Areas ---------------------------------------- */
-/* --------------- 4.1 Header ------------------------- */
-
-header{
-    background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 100%);
+header {
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 0%, rgba(87, 34, 205, 1) 100%);
 }
 
-.outer-header-container{
+.outer-header-container {
     /*border: solid red;*/
     display: flex;
     flex-direction: row;
@@ -95,8 +86,8 @@ header{
     justify-content: center;
 }
 
-.inner-nav-container{
-    border: dashed green;
+.inner-nav-container {
+    /*border: dashed green;*/
     display: flex;
     flex-direction: column;
 
@@ -106,39 +97,40 @@ header{
     margin: 0 20px;
 }
 
-.nav-container-list{
-    border: solid yellow;
+.nav-container-list {
+    /*border: solid yellow;*/
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding: 20px;
 
-    align-self: flex-end;
-    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 0;
+
     color: var(--floating-words);
 }
 
-.nav-container-list > ul{
-    list-style: none;
+.nav-container-list > ul {
+    /*border: solid black;*/
     display: flex;
-    /*list-style: none;*/
-    gap: 20px;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
     font-family: inherit;
-    /*gap vervangen door space-between*/
-    color: var(--floating-words) ;
+    gap: 20px;
+    color: var(--floating-words);
 }
 
-.nav-links{
+.nav-links {
     color: var(--floating-words);
     text-decoration: none;
 }
 
-.header-text{
+.header-text {
     /*border: solid red;*/
     display: flex;
     flex-direction: column;
 
-    /*flex-basis: auto;*/
     max-width: 600px;
     padding: 100px 0;
     align-items: center;
@@ -146,27 +138,30 @@ header{
     gap: 30px;
 }
 
-.work-together-btn{
+.work-together-btn {
     background-color: var(--french-rose);
+    color: var(--floating-words);
+
     font-family: inherit;
     text-transform: uppercase;
     font-weight: 400;
-    color: var(--floating-words);
+
     max-width: 220px;
+
     border-radius: 30px;
     border: none;
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
     padding: 18px 24px;
 }
 
 
-/* --------------- 4.2 Introduction ------------------- */
+/* --------------- 3.2 Introduction ------------------- */
 
-.company-description{
-    align-self: center;
+.company-description {
     /*border: solid orange;*/
-    /*flex-basis: 400px;*/
-    padding: 50px 20px;
+    align-self: center;
+    padding: 50px 0;
     text-align: center;
 
     color: var(--chrysler-blue);
@@ -174,18 +169,23 @@ header{
     max-width: 700px;
 }
 
-.company-description p{
+.company-description p {
     color: var(--standard-text);
+    padding-top: 80px;
 }
 
-.click-here{
+.company-description h2 {
+    padding: 10px;
+}
+
+.click-here {
     text-decoration: none;
     color: var(--chrysler-blue);
 }
 
-/* --------------- 4.3 Project content ------------------- */
+/* --------------- 3.3 Project content ------------------- */
 
-.outer-projects-container{
+.outer-projects-container {
     background-color: var(--floating-words);
     display: flex;
     flex-direction: row;
@@ -195,7 +195,7 @@ header{
     /*border: solid purple;*/
 }
 
-.project-items-wrapper{
+.project-items-wrapper {
     /*border: dashed blue;*/
     display: flex;
     flex-direction: row;
@@ -206,22 +206,20 @@ header{
 
 }
 
-.project-items-wrapper:nth-child(even){
+.project-items-wrapper:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.project-items-text{
+.project-items-text {
     /*border: dashed deeppink;*/
     display: flex;
     flex-direction: column;
 
-    flex-basis: 400px;
+    flex-basis: 320px;
     padding: 20px 20px;
 }
 
-
-
-.project-image-wrapper{
+.project-image-wrapper {
     /*border: solid yellow;*/
     flex-basis: 800px;
 
@@ -229,13 +227,13 @@ header{
     flex-shrink: 1;
 }
 
-.project-item-images{
+.project-item-images {
     width: 100%;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
 }
 
 
-.view-project-link{
+.view-project-link {
     font-family: ìnherit, serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -243,9 +241,9 @@ header{
     color: var(--chrysler-blue);
 }
 
-/* --------------- 4.3 Articles content ------------------- */
+/* --------------- 3.3 Articles content ------------------- */
 
-.inner-usp-container{
+.inner-usp-container {
     /*border: dashed red;*/
     display: flex;
     flex-direction: row;
@@ -257,11 +255,15 @@ header{
     padding: 100px 0;
 }
 
-.usp-article{
+.usp-article {
     border: solid 1px var(--majorella-blue);
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
     padding: 20px 20px;
-    flex-basis: 330px;
+    flex-basis: 320px;
+}
+
+.usp-article h2 {
+    color: var(--chrysler-blue);
 }
 
 .usp-article img {
@@ -269,10 +271,10 @@ header{
     margin: 16px;
 }
 
-/* --------------- 4.4 Form section ------------------- */
+/* --------------- 3.4 Form section ------------------- */
 
-.outer-container-form{
-    background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 100%);
+.outer-container-form {
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 0%, rgba(87, 34, 205, 1) 100%);
     color: var(--floating-words);
     width: 100%;
     display: flex;
@@ -284,8 +286,8 @@ header{
     padding: 60px 0;
 }
 
-.work-together-div{
-    border: solid red;
+.work-together-div {
+    /*border: solid red;*/
     display: flex;
     flex-direction: column;
 
@@ -293,34 +295,24 @@ header{
 
     width: 700px;
 }
-.work-together-div h2, p{
+
+.work-together-div h2, p {
     padding: 20px 0;
 }
 
-.feedback-form{
-    /*border: solid green;*/
-    text-align: left;
-}
-
-.work-together-div label{
-    border: solid orangered;
-
-    /*padding-top: 20px;*/
-}
-
-.work-together-div input{
+.work-together-div input {
     font-family: inherit;
     width: 100%;
     padding: 10px 10px;
 }
 
-.work-together-div textarea{
+.work-together-div textarea {
     font-family: inherit;
     width: 100%;
     padding: 10px 10px;
 }
 
-.send-button{
+.send-button {
     background-color: var(--french-rose);
     font-family: inherit;
     align-self: center;
@@ -335,21 +327,44 @@ header{
     padding: 18px 24px;
 }
 
-.labels-form{
-    padding: 20px 0;
+.labels-form {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
 }
 
-/* --------------- 4.5 Footer ------------------- */
+/* --------------- 3.5 Footer ------------------- */
 
-footer{
+footer {
     background-color: var(--standard-text);
     color: var(--main-bg-color);
     text-align: center;
     padding: 20px;
 }
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+/* ------------------------------- 4. Media Queries -------------------------------- */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
+    .nav-container-list > ul {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .project-items-wrapper {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .project-items-wrapper:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .project-items-text {
+        flex-basis: auto;
+    }
+
+    .project-image-wrapper {
+        flex-basis: auto;
+    }
 }
