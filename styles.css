@@ -96,7 +96,7 @@ header{
 }
 
 .inner-nav-container{
-    /*border: dashed green;*/
+    border: dashed green;
     display: flex;
     flex-direction: column;
 
@@ -107,11 +107,12 @@ header{
 }
 
 .nav-container-list{
-    /*border: solid yellow;*/
+    border: solid yellow;
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 20px;
-    flex-direction: row;
+
     align-self: flex-end;
     justify-content: flex-end;
     color: var(--floating-words);
@@ -269,41 +270,42 @@ header{
 }
 
 /* --------------- 4.4 Form section ------------------- */
+
 .outer-container-form{
     background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 100%);
+    color: var(--floating-words);
     width: 100%;
     display: flex;
     flex-direction: row;
 
     justify-content: center;
-}
-
-.inner-container-form{
-    color: var(--floating-words);
-    display: flex;
-    flex-direction: column;
-
-    flex-basis: 1200px;
+    border: solid green;
     text-align: center;
     padding: 60px 0;
 }
 
 .work-together-div{
+    border: solid red;
     display: flex;
     flex-direction: column;
 
     align-self: center;
-    /*border: solid red;*/
+
     width: 700px;
 }
 .work-together-div h2, p{
     padding: 20px 0;
 }
 
-
 .feedback-form{
     /*border: solid green;*/
     text-align: left;
+}
+
+.work-together-div label{
+    border: solid orangered;
+
+    /*padding-top: 20px;*/
 }
 
 .work-together-div input{
@@ -312,7 +314,7 @@ header{
     padding: 10px 10px;
 }
 
-textarea{
+.work-together-div textarea{
     font-family: inherit;
     width: 100%;
     padding: 10px 10px;
@@ -333,6 +335,10 @@ textarea{
     padding: 18px 24px;
 }
 
+.labels-form{
+    padding: 20px 0;
+}
+
 /* --------------- 4.5 Footer ------------------- */
 
 footer{
@@ -343,3 +349,7 @@ footer{
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 576px){
+
+}
