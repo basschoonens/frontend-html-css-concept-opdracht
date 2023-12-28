@@ -1,37 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-bg-color: #F3F6F9;
+    --standard-text: #0C0C0C;
+    --service-tile: #7A7A7A;
+    --floating-words: #F2F0FF;
+
+    --majorella-blue: #4B49E8;
+    --chrysler-blue: #5722CD;
+    --french-rose: #ED4385;
+}
+
+/*////////////////////////
+
+
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Areas
+        3.1 Header
+        3.2 Introduction
+        etc.
+    4. Media Queries
+
+ */
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+.outer-container {
+    background-color: var(--main-bg-color);
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    align-items: center;
+}
+
+.inner-container {
+    /*border: dashed green;*/
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    margin: 0 20px;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-/* --------------- 3.1 Reusables ----------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
 
-/* --------------- 3.2 Other --------------------------- */
+h2 {
+    padding: 5px;
+}
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+h5 {
+    font-family: inherit;
+}
 
-/* --------------- 4.1 Header ------------------------- */
+/* ------------------------------- 3. Areas ---------------------------------------- */
+/* --------------- 3.1 Header ------------------------- */
 
-/* --------------- 4.2 Introduction ------------------- */
+header {
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 0%, rgba(87, 34, 205, 1) 100%);
+}
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+.outer-header-container {
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    justify-content: center;
+}
+
+.inner-nav-container {
+    /*border: dashed green;*/
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 1200px;
+    align-items: center;
+    color: var(--floating-words);
+    margin: 0 20px;
+}
+
+.nav-container-list {
+    /*border: solid yellow;*/
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    padding: 20px 0;
+
+    color: var(--floating-words);
+}
+
+.nav-container-list > ul {
+    /*border: solid black;*/
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+    font-family: inherit;
+    gap: 20px;
+    color: var(--floating-words);
+}
+
+.nav-links {
+    color: var(--floating-words);
+    text-decoration: none;
+}
+
+.header-text {
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: column;
+
+    max-width: 600px;
+    padding: 100px 0;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.work-together-btn {
+    background-color: var(--french-rose);
+    color: var(--floating-words);
+
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    max-width: 220px;
+
+    border-radius: 30px;
+    border: none;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    padding: 18px 24px;
+}
+
+
+/* --------------- 3.2 Introduction ------------------- */
+
+.company-description {
+    /*border: solid orange;*/
+    align-self: center;
+    padding: 50px 0;
+    text-align: center;
+
+    color: var(--chrysler-blue);
+    font-weight: 500;
+    max-width: 700px;
+}
+
+.company-description p {
+    color: var(--standard-text);
+    padding-top: 80px;
+}
+
+.company-description h2 {
+    padding: 10px;
+}
+
+.click-here {
+    text-decoration: none;
+    color: var(--chrysler-blue);
+}
+
+/* --------------- 3.3 Project content ------------------- */
+
+.outer-projects-container {
+    background-color: var(--floating-words);
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    width: 100%;
+    /*border: solid purple;*/
+}
+
+.project-items-wrapper {
+    /*border: dashed blue;*/
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.project-items-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-items-text {
+    /*border: dashed deeppink;*/
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 320px;
+    padding: 20px 20px;
+}
+
+.project-image-wrapper {
+    /*border: solid yellow;*/
+    flex-basis: 800px;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.project-item-images {
+    width: 100%;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+.view-project-link {
+    font-family: ìnherit, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--chrysler-blue);
+}
+
+/* --------------- 3.3 Articles content ------------------- */
+
+.inner-usp-container {
+    /*border: dashed red;*/
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 16px;
+
+    padding: 100px 0;
+}
+
+.usp-article {
+    border: solid 1px var(--majorella-blue);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
+    padding: 20px 20px;
+    flex-basis: 320px;
+}
+
+.usp-article h2 {
+    color: var(--chrysler-blue);
+}
+
+.usp-article img {
+    max-width: 50px;
+    margin: 16px;
+}
+
+/* --------------- 3.4 Form section ------------------- */
+
+.outer-container-form {
+    /*border: solid green;*/
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    color: var(--floating-words);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    width: 100%;
+
+    text-align: center;
+    padding: 60px 0;
+}
+
+.work-together-div {
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+    align-self: center;
+}
+
+.work-together-div h2, p {
+    padding: 20px 0;
+}
+
+.work-together-div input {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.work-together-div textarea {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.send-button {
+    background-color: var(--french-rose);
+    font-family: inherit;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--floating-words);
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    margin: 10px 0 0 0;
+    padding: 18px 24px;
+}
+
+.labels-form {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+}
+
+/* --------------- 3.5 Footer ------------------- */
+
+footer {
+    background-color: var(--standard-text);
+    color: var(--main-bg-color);
+    text-align: center;
+    padding: 20px;
+}
+
+/* ------------------------------- 4. Media Queries -------------------------------- */
+
+@media screen and (max-width: 576px) {
+
+    .nav-container-list > ul {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .project-items-wrapper {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .project-items-wrapper:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .project-items-text {
+        flex-basis: auto;
+    }
+
+    .project-image-wrapper {
+        flex-basis: auto;
+    }
+}
