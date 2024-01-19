@@ -81,6 +81,7 @@ header {
     /*border: solid red;*/
     display: flex;
     flex-direction: row;
+    position: relative;
 
     width: 100%;
     justify-content: center;
@@ -155,6 +156,13 @@ header {
     padding: 18px 24px;
 }
 
+.triangle-bottom{
+    position: absolute;
+    border-bottom: 50px solid var(--main-bg-color);
+    border-right: 100vw solid transparent;
+    bottom: 0;
+    left: 0;
+}
 
 /* --------------- 3.2 Introduction ------------------- */
 
